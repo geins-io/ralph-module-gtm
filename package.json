@@ -1,9 +1,9 @@
 {
-  "name": "lp-pwa-module-boilerplate",
+  "name": "@geins/ralph-module-gtm",
   "version": "1.0.0",
-  "description": "Boilerplate for creating a module for Geins PWA strorefront",
+  "description": "Geins module for Google Tag Manager",
   "author": {
-    "name": "arvidsson-geins"
+    "name": "olivia-geins"
   },
   "keywords": [
     "vue",
