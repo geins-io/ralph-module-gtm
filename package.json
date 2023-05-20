@@ -1,6 +1,6 @@
 {
   "name": "@geins/ralph-module-gtm",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Geins module for Google Tag Manager",
   "author": {
     "name": "olivia-geins"
@@ -33,6 +33,7 @@
     ]
   },
   "dependencies": {
+    "@nuxtjs/gtm": "^2.4.0",
     "consola": "^2.3.2",
     "crypto-js": "^4.1.1"
   }
