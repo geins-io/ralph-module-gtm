@@ -1,6 +1,6 @@
 {
   "name": "@geins/ralph-module-gtm",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "Geins module for Google Tag Manager",
   "author": {
     "name": "olivia-geins"
