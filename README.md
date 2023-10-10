@@ -1,35 +1,32 @@
 [![NPM Package][npm]][npm-url]
 [![NPM Downloads][npm-downloads-per-month]][npm-trends]
+![Geins][mit-shield]
 
-# Ralph Module for GTM
+[![Start Geins Free Trial][geins-tiral-img]][geins-tiral-url] [![Geins Docs][geins-docs-img]][geins-docs-url]
 
-GTM module for Ralph that will push the following events to the datalayer:
+[![geins](https://raw.githubusercontent.com/geins-io/resources/master/images/banners/repos/gtm.jpg)](https://www.geins.io)
 
-- `add_to_cart` - One or more products are added to the cart
-- `remove_from_cart` - One or more products are removed from the cart
-- `view_item` - A product page is viewed
-- `view_item_list` - A product in a list is scrolled into view
-- `select_item` - A product in a list is clicked
-- `begin_checkout` - The checkout page has been entered
-- `purchase` - A purchase has been made
-- `original_location` - The page where the user enters the site
-- `virtual_page_view` - A new navigation has been made
-- `page_data` - A page has been loaded
-- `add_to_wishlist` - A product has been added to the wishlist
 
-## Requirements
+# Google Tag Manager module for Geins PWA Storefront
 
-This package require Nuxt 2 to be installed in your project. It also requires @ralph/ralph-ui 19.4.0 or higher.
+Add google tag manager to your Geins PWA Storefront. A wrapper around the [nuxt-gtm](https://github.com/nuxt-community/gtm-module) module.
+
+## Pre-requisites
+
+- Geins Account and PWA Storefront Ralph. [Get a free trial here](https://www.geins.io)
+- Storefront with `@ralph/ralph-ui` 19.4.0 or higher.
 
 ## Installation
 
+### 1. Install the module
+
 ```bash
-npm install @geins/ralph-module-gtm
+npm i @geins/ralph-module-gtm
 ```
 
-## Usage
+### 2. Add the module to your Geins PWA Storefront Ralph
 
-Once installed, you can add the module to your Nuxt 2 app by updating the modules array in the nuxt.config.js file. You can then configure the module by adding options to the `@geins/ralph-module-gtm` object:
+Add the module to your Geins PWA Storefront Ralph by adding the following lines to your `nuxt.config.json` file:
 
 ```javascript
 // nuxt.config.js
@@ -56,15 +53,36 @@ module.exports = {
 }
 ```
 
-## License
+### Events
 
-MIT
+- `add_to_cart` - One or more products are added to the cart
+- `remove_from_cart` - One or more products are removed from the cart
+- `view_item` - A product page is viewed
+- `view_item_list` - A product in a list is scrolled into view
+- `select_item` - A product in a list is clicked
+- `begin_checkout` - The checkout page has been entered
+- `purchase` - A purchase has been made
+- `original_location` - The page where the user enters the site
+- `virtual_page_view` - A new navigation has been made
+- `page_data` - A page has been loaded
+- `add_to_wishlist` - A product has been added to the wishlist
+
 
 ## Note
 
+Since this module is based on the `[@nuxtjs/gtm](https://github.com/nuxt-community/gtm-module)` module, it will conflict with it.
+
 If you are already using the `@nuxtjs/gtm` module, you should uninstall it and use this module instead, which will include the `@nuxtjs/gtm` module as a dependency. If you are using the internal GTM events of Ralph, you should disable them by setting `useExternalGtm` to true in the `publicRuntimeConfig` of you nuxt.config.js file.
+
 
 [npm]: https://img.shields.io/npm/v/@geins/ralph-module-gtm
 [npm-url]: https://www.npmjs.com/package/@geins/ralph-module-gtm
 [npm-downloads-per-month]: https://img.shields.io/npm/dm/@geins/ralph-module-gtm.svg
 [npm-trends]: https://npmtrends.com/@geins/ralph-module-gtm
+[geins-docs-url]: https://docs.geins.io
+[geins-docs-img]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/geins-io/resources/master/sheilds/geins-docs-read-v3.json
+[geins-tiral-url]: https://www.geins.io
+[geins-tiral-img]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/geins-io/resources/master/sheilds/geins-fee-tiral.json
+[mit-shield]: https://img.shields.io/badge/license-MIT-green
+[mit-url]: https://en.wikipedia.org/wiki/MIT_License
+
