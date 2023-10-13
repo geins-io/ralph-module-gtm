@@ -6,7 +6,6 @@
 
 [![geins](https://raw.githubusercontent.com/geins-io/resources/master/images/banners/repos/gtm.jpg)](https://www.geins.io)
 
-
 # Google Tag Manager module for Geins PWA Storefront
 
 Add google tag manager to your Geins PWA Storefront. A wrapper around the [nuxt-gtm](https://github.com/nuxt-community/gtm-module) module.
@@ -53,7 +52,9 @@ module.exports = {
 }
 ```
 
-### Events
+## Events
+
+The following events are pushed to gtm by this module:
 
 - `add_to_cart` - One or more products are added to the cart
 - `remove_from_cart` - One or more products are removed from the cart
@@ -67,13 +68,17 @@ module.exports = {
 - `page_data` - A page has been loaded
 - `add_to_wishlist` - A product has been added to the wishlist
 
+## Cookies
+
+The following cookies are set by this module:
+
+- `ralph-gtm-user` - This is a HttpOnly cookie with a random value (guid) plus a UNIX timestamp that is used to identify the user. It is set to expire in 2 years.
 
 ## Note
 
 Since this module is based on the `[@nuxtjs/gtm](https://github.com/nuxt-community/gtm-module)` module, it will conflict with it.
 
 If you are already using the `@nuxtjs/gtm` module, you should uninstall it and use this module instead, which will include the `@nuxtjs/gtm` module as a dependency. If you are using the internal GTM events of Ralph, you should disable them by setting `useExternalGtm` to true in the `publicRuntimeConfig` of you nuxt.config.js file.
-
 
 [npm]: https://img.shields.io/npm/v/@geins/ralph-module-gtm
 [npm-url]: https://www.npmjs.com/package/@geins/ralph-module-gtm
@@ -85,4 +90,3 @@ If you are already using the `@nuxtjs/gtm` module, you should uninstall it and u
 [geins-tiral-img]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/geins-io/resources/master/sheilds/geins-fee-tiral.json
 [mit-shield]: https://img.shields.io/badge/license-MIT-green
 [mit-url]: https://en.wikipedia.org/wiki/MIT_License
-
