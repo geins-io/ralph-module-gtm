@@ -74,6 +74,9 @@ The following cookies are set by this module:
 
 - `ralph-gtm-user` - This is a HttpOnly cookie with a random value (guid) plus a UNIX timestamp that is used to identify the user. It is set to expire in 2 years.
 
+>**Note**
+> This cookie can be used as the `master-cookie` for serverside tracking. Read more about serverside tracking with **master-cookies** [here](https://stape.io/blog/increase-first-party-cookie-lifetime-set-by-a-third-party-ip).
+
 ## Note
 
 Since this module is based on the `[@nuxtjs/gtm](https://github.com/nuxt-community/gtm-module)` module, it will conflict with it.
