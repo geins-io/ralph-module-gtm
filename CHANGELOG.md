@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## Version 3.5.0 (2023-12-14)
+
+### Added
+
+- First name, last name data to purchase event
+
+### Changed
+
+- `user_id` key for purchase data changed to `user_email`
+
 ## Version 3.4.0 (2023-10-13)
 
 ### Added
