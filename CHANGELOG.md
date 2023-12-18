@@ -4,7 +4,7 @@
 
 ### Added
 
-- First name, last name & country code data to added purchase event
+- First name, last name, country code data added to purchase event
 
 ## Version 3.4.0 (2023-10-13)
 
