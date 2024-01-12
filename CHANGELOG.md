@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Version 3.6.0 (2024-01-10)
+
+### Added
+
+- Zip code data added to purchase event
+
 ## Version 3.5.0 (2023-12-14)
 
 ### Added
