@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Version 3.7.0 (2024-03-14)
+
+### Changed
+
+- Module size optimization: Replaced crypto-js with the new js-sha256 npm package for sha256 encoding, significantly reducing the package size.
+
 ## Version 3.6.0 (2024-01-10)
 
 ### Added
