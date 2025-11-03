@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Version 3.8.0 (2025-11-03)
+
+### Added
+
+- Option to use skuId as item variant (`useSkuIdAsItemVariant`), default is false
+
 ## Version 3.7.0 (2024-03-14)
 
 ### Changed
